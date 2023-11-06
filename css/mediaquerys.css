@@ -1,0 +1,62 @@
+.project-tile{
+    box-shadow: 4px 4px 20px rgba(0, 171, 240, 0.3),
+      -4px 4px 20px rgba(0, 171, 240, 0.3);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    width: 26%;
+    background-color: transparent;
+  }
+
+
+
+  /*Para moviles*/
+
+
+  @media (max-width: 800px) {
+    .project-tile {
+      width: 100%;
+      max-width: none;
+      margin: 15px 0; /* Añadido para mejorar el espacio entre los elementos */
+    }
+  
+   .button {
+      display: block;
+      width: 100%;
+      margin-top: 10px; /* Espacio entre el texto y el botón */
+    }  
+  }   
+
+
+  
+  /*Tables y desktop*/
+  @media (min-width: 750px) {
+    #cards-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px; 
+      justify-items: center; 
+    }
+  
+    .project-tile {
+      width: 100%; 
+      max-width: 300px; 
+    }
+    
+    
+    
+}
+ 
+  @media (min-width: 900px) {
+    #cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Cambia el número de columnas según tu preferencia */
+      gap: 20px; /* Ajusta el espacio entre las columnas */
+      justify-items: center; /* Centra los elementos en el eje horizontal */
+    }
+  
+    .project-tile {
+      width: 100%; /* Establece el ancho al 100% para ocupar toda la columna */
+      max-width: 300px; /* Define un ancho máximo para los project-tile */
+    }
+  }
