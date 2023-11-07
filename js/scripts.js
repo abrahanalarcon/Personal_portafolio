@@ -6,6 +6,7 @@ const datos = {
 }
 
 // submit
+const formulario = document.querySelector('.formulario');
 
 formulario.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -67,7 +68,7 @@ function mostrarAlerta(mensaje ,error = null){
 const nombre = document.querySelector('#nombre');
 const email = document.querySelector('#email');
 const mensaje = document.querySelector('#mensaje');
-const telefono = document.querySelector('#');
+const telefono = document.querySelector('#mensaje');
 
 
 nombre.addEventListener('input', leerTexto);
