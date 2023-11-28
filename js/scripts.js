@@ -76,3 +76,13 @@ email.addEventListener('input', leerTexto);
 mensaje.addEventListener('input', leerTexto);
 telefono.addEventListener('input', leerTexto);
 
+
+
+
+
+window.onload = function() {
+    var loaderWrapper = document.querySelector('.loader-wrapper');
+    setTimeout(function() {
+      loaderWrapper.style.display = 'none'; // oculta el loader después de 5 segundos
+    }, 3000);
+  };
