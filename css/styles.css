@@ -629,3 +629,8 @@ footer{
     }
   }
   
+  .footer {
+    background-color: var(--primario);
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+}
