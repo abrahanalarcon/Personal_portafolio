@@ -242,13 +242,15 @@ img {
   
 
   .dos-columnas{
-    margin-top: 10rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
   }
 
 
   .dos-columnas img {
-    display: block;
-    margin: 0 auto;
+    
+    margin: 0 0 3rem 8rem;
     max-width: 100%;
     height: auto;
   }
@@ -257,7 +259,17 @@ img {
     .dos-columnas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 20rem;
+        column-gap: 15rem;
+    }
+}
+
+.imagen-con-sombra{
+    grid-row: 1 / 2;
+    
+}
+@media (min-width:768px){
+    .imagen-con-sombra{
+        grid-column: 2 / 3;
     }
 }
 
