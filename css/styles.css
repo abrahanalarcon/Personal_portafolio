@@ -250,7 +250,7 @@ img {
 
   .dos-columnas img {
     
-    margin: 0 0 3rem 8rem;
+    margin: 0 0 3rem 4rem;
     max-width: 100%;
     height: auto;
   }
@@ -259,7 +259,7 @@ img {
     .dos-columnas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 15rem;
+        column-gap: 8rem;
     }
 }
 
