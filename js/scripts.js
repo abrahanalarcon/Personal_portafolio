@@ -86,3 +86,17 @@ window.onload = function() {
       loaderWrapper.style.display = 'none'; // oculta el loader después de 5 segundos
     }, 3000);
   };
+
+
+  //Show up information about pages
+
+  const producto = document.querySelector(".producto");
+
+  const div = document.querySelector(".card-stenght");
+  const remove = document.querySelector(".remove");
+  producto.onclick = function() {
+    div.classList.toggle("active");
+  };
+  remove.addEventListener("click", function() {
+    producto.click();
+ })
