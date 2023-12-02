@@ -236,6 +236,22 @@ img {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     width: 300px;
     height: 300px;
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px)
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
 }
  
 
