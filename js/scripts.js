@@ -68,7 +68,7 @@ function mostrarAlerta(mensaje ,error = null){
 const nombre = document.querySelector('#nombre');
 const email = document.querySelector('#email');
 const mensaje = document.querySelector('#mensaje');
-const telefono = document.querySelector('#mensaje');
+const telefono = document.querySelector('#telefono');
 
 
 nombre.addEventListener('input', leerTexto);
