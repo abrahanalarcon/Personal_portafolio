@@ -100,3 +100,126 @@ window.onload = function() {
   remove.addEventListener("click", function() {
     producto.click();
  })
+
+
+
+
+
+/* 
+
+const datos = {
+    nombre: '',
+    email: '',
+    mensaje: '',
+    telefono: ''
+}
+
+// submit
+const formulario = document.querySelector('.formulario');
+
+formulario.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const { nombre, email, mensaje, telefono } = datos;
+
+    if (nombre === '' || email === '' || mensaje === '' || telefono === '') {
+        mostrarAlerta('Todos los campos son obligatorios', true);
+        return;
+    }
+
+    // Enviar datos al servidor
+    enviarDatosAlServidor(datos);
+});
+
+function leerTexto(e) {
+    datos[e.target.id] = e.target.value;
+}
+
+function mostrarAlerta(mensaje, error = null) {
+    const alerta = document.createElement('p');
+    alerta.textContent = mensaje;
+
+    if (error) {
+        alerta.classList.add('error');
+    } else {
+        alerta.classList.add('correcto');
+    }
+
+    formulario.appendChild(alerta);
+
+    setTimeout(() => {
+        alerta.remove();
+    }, 3000);
+}
+
+function enviarDatosAlServidor(datos) {
+    fetch('http://tu-servidor.com/enviar-correo', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(datos),
+    })
+        .then(response => response.json())
+        .then(data => {
+            mostrarAlerta(data.mensaje, !data.enviado);
+        })
+        .catch((error) => {
+            console.error('Error al enviar datos:', error);
+            mostrarAlerta('Hubo un error al enviar los datos', true);
+        });
+}
+
+
+
+
+
+const express = require('express');
+   const nodemailer = require('nodemailer');
+   const bodyParser = require('body-parser');
+
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.json());
+
+app.post('/enviar-correo', (req, res) => {
+    const datos = req.body;
+
+    // Configurar el transporte del correo
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'tu-correo@gmail.com',
+            pass: 'tu-contraseña',
+        },
+    });
+
+    // Configurar el contenido del correo
+    const mailOptions = {
+        from: 'tu-correo@gmail.com',
+        to: 'destinatario@gmail.com',
+        subject: 'Nuevo mensaje del formulario de contacto',
+        html: `
+            <p>Nombre: ${datos.nombre}</p>
+            <p>Email: ${datos.email}</p>
+            <p>Teléfono: ${datos.telefono}</p>
+            <p>Mensaje: ${datos.mensaje}</p>
+        `,
+    };
+
+    // Enviar el correo
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error('Error al enviar el correo:', error);
+            res.json({ enviado: false, mensaje: 'Hubo un error al enviar el correo' });
+        } else {
+            console.log('Correo enviado: ' + info.response);
+            res.json({ enviado: true, mensaje: 'Mensaje enviado correctamente' });
+        }
+    });
+});
+
+app.listen(port, () => {
+    console.log(`Servidor corriendo en http://localhost:${port}`);
+}); */
