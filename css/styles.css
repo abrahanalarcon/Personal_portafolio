@@ -68,9 +68,9 @@ h4 {
     font-size: 2.8rem;
 }
 
-/*.entrada-blog h3, .entrada-blog h2, .entrada-blog p {
-    margin: 0;
-} */
+.entrada-blog h3, .entrada-blog h2, .entrada-blog p {
+    text-align: center;
+} 
 img {
     max-width: 100%;
 }
