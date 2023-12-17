@@ -287,7 +287,9 @@ img {
 
   
 
-
+.sesion{
+    margin-top: 10rem;
+}
 
  /*segunda pagina*/ 
 
@@ -427,7 +429,7 @@ img {
 
 
 #cards{
-  margin-top: 10.5rem;
+  margin-top: 0rem;
 }
 
   
@@ -762,3 +764,9 @@ footer{
   }
 
 
+  .sin-box-shadow {
+    box-shadow: none;
+}
+.button {
+    box-shadow: none;
+}
