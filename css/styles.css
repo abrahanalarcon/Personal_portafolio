@@ -427,9 +427,13 @@ img {
 }
 
 
-#cards{
+.main-main{
   margin-top: 10rem;
 }
+#cards{
+    margin-top: 2rem;
+  }
+  
 
   
 /*Contacto */
